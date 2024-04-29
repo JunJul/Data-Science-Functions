@@ -63,7 +63,7 @@ def frequency_encoder(data, is_normalize = True):
 
 # count unique values in each categorical variable
 def count_uniques(c_data):
-  return pd.DataFrame(categorical_variables.nunique(), columns=["count"])
+  return pd.DataFrame(c_data.nunique(), columns=["count"])
 
 # get what and how many unqie values in each categorical variable
 def check_uniques(c_data):
